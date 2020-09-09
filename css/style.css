@@ -8,16 +8,19 @@ body{
 }
 
 header{
-	background-color: #37517F;
+	background-color: #37517E;
 	background-image: url(../images/web.png);
 	background-repeat: no-repeat;
 	background-position: right center;
 	background-size: contain;
 }
+.blue{
+	background-color: #47b2e4;
+}
 
 .banner-content{
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 110px;
+    padding-bottom: 130px;
 }
 .banner-content p{
 	color: #fff;
@@ -41,16 +44,17 @@ header .btn{
 	display: inline-flex;
 		
 	align-items: center;
+	
+
 }
 header .btn i{
 	
-	font-size: 40px;
-		
+	font-size: 32px;
 	color: #47b2e4;
 }
 header .btn:hover{
 	 box-shadow:  0 0 0 rgba(0, 0, 0, 0) !important;
-	 color: blue;
+	 color: #fff;
 }
 
 p{
@@ -70,6 +74,10 @@ p{
 .navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .nav-link.active {
     color: rgb(71 178 228)!important;
 }  
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
+    color: rgb(71 178 228);
+}
 
 .features-section{
 	
@@ -408,15 +416,18 @@ p{
 
 .price-table{
 
-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+	border-top: 3px solid transparent;
+	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 
-color: #12304A;
+	color: #12304A;
 
-border-radius: 10px;
+	border-radius: 10px;
+	transition: all 0.3s linear;
 }
 .price-heading{
 
 padding: 60px 30px;
+transition: all 0.3s linear;
 }
 .price-heading h1{
 
@@ -461,6 +472,7 @@ margin-right: 20px;
 .order-now{
 
 padding: 60px 30px;
+transition: all 0.3s linear;
 }
 .order-now button{
 	
@@ -483,6 +495,20 @@ border-top: 3px solid #47b2e4;
 padding-bottom: 80px;
 }
 .price-table.active .order-now{
+	
+padding-bottom: 80px;
+}
+
+.price-table:hover{
+
+border-top: 3px solid #47b2e4;
+}
+
+.price-table:hover .price-heading{
+	
+padding-bottom: 80px;
+}
+.price-table:hover .order-now{
 	
 padding-bottom: 80px;
 }
